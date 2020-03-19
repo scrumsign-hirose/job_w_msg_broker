@@ -54,7 +54,7 @@ def create_job_manifest(n_job, n_node):
 if __name__ == '__main__':
 
     # 素数計算の分割パラメータ
-    job_parms = [[1,1000],[1001,2000],[2001,2000],[3001,4000]]
+    job_parms = [[1,1000],[1001,1000],[2001,1000],[3001,1000]]
     jobs  = len(job_parms)
     nodes = 2
 
