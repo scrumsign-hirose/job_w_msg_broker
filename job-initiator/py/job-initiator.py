@@ -28,7 +28,7 @@ def create_queue():
 def create_job_manifest(n_job, n_node):
     container = client.V1Container(
         name="pn-generator",
-        image="maho/pn_generator:0.7",
+        image="shinhiro1975/pn_generator:0.2",
         env=[
             client.V1EnvVar(name="BROKER_URL",value="amqp://guest:guest@taskqueue:5672"),
             client.V1EnvVar(name="QUEUE",value="taskqueue")
